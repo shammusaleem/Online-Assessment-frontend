@@ -1,0 +1,267 @@
+/* App.css */
+
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f3f4f6; /* Tailwind's gray-100 */
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  color: #333333;
+  font-weight: 600;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Form Styles */
+input,
+button {
+  padding: 0.8rem;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea {
+  width: 100%;
+  border: 1px solid #d1d5db; /* Tailwind's gray-300 */
+  margin-bottom: 1rem;
+}
+
+button {
+  background-color: #3b82f6; /* Tailwind's blue-500 */
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2563eb; /* Tailwind's blue-600 */
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5); /* Tailwind's blue-500 */
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #1e40af; /* Tailwind's blue-800 */
+  color: white;
+  padding: 1rem;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.navbar li {
+  font-size: 1.1rem;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.navbar a:hover {
+  background-color: #2563eb; /* Tailwind's blue-600 */
+  border-radius: 5px;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 250px;
+  background-color: #1f2937; /* Tailwind's gray-800 */
+  padding: 1rem;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+}
+
+.sidebar h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.sidebar ul {
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 1rem 0;
+}
+
+.sidebar li a {
+  color: white;
+  font-size: 1.1rem;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+.sidebar li a:hover {
+  background-color: #2563eb; /* Tailwind's blue-600 */
+  border-radius: 5px;
+}
+
+/* Exam Card Styles */
+.exam-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.exam-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.exam-card p {
+  color: #6b7280; /* Tailwind's gray-500 */
+}
+
+/* Exam Detail Page Styles */
+.exam-detail {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.exam-detail h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.exam-detail .question {
+  margin-bottom: 1.5rem;
+}
+
+.exam-detail button {
+  background-color: #3b82f6; /* Tailwind's blue-500 */
+  color: white;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+  border-radius: 5px;
+}
+
+.exam-detail button:hover {
+  background-color: #2563eb; /* Tailwind's blue-600 */
+}
+
+/* Result Page Styles */
+.result-page {
+  padding: 2rem;
+}
+
+.result-page h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.result-page p {
+  font-size: 1.2rem;
+}
+
+.result-page .score {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #34d399; /* Tailwind's green-400 */
+}
+
+.result-page .feedback {
+  margin-top: 1rem;
+  background-color: #d1fae5; /* Tailwind's green-100 */
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.result-page .feedback p {
+  margin: 0;
+}
+
+/* Admin Dashboard Styles */
+.dashboard {
+  padding: 2rem;
+}
+
+.dashboard h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.dashboard .section {
+  margin-bottom: 2rem;
+}
+
+.dashboard .section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Report Management Styles */
+.report-management {
+  padding: 2rem;
+}
+
+.report-management h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.report-management input {
+  padding: 0.8rem;
+  border: 1px solid #d1d5db;
+  margin-bottom: 1rem;
+}
+
+.report-management .report {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+.report-management .report h3 {
+  font-size: 1.5rem;
+}
+
+.report-management .report p {
+  color: #6b7280;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+
+  .container {
+    padding: 1rem;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+}
